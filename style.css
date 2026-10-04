@@ -463,8 +463,8 @@ a {
 }
 
 .phone-frame {
-  width: 310px;
-  height: 600px;
+  width: 320px;
+  height: 615px;
   background: #0f172a;
   border-radius: 44px;
   padding: 10px;
@@ -500,6 +500,7 @@ a {
   padding: 22px 10px 10px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /* 1. Mobile Status Bar */
@@ -688,7 +689,7 @@ a {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
-  padding: 12px 14px;
+  padding: 10px 12px;
   margin-bottom: 8px;
   position: relative;
   display: flex;
@@ -696,11 +697,17 @@ a {
   align-items: center;
   text-align: center;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  flex-shrink: 0;
 }
 
 .layout-select-card.selected {
   border: 2px solid #e11d48;
   box-shadow: 0 4px 16px rgba(225, 29, 72, 0.12);
+}
+
+.layout-select-card.card-half-peek {
+  opacity: 0.95;
+  margin-bottom: 0;
 }
 
 .card-radio-dot {
@@ -750,12 +757,12 @@ a {
   color: #64748b;
 }
 
-/* 7. Bottom Floating Next Step Action */
-.app-bottom-action {
-  margin-top: auto;
-  display: flex;
-  justify-content: flex-end;
-  padding: 4px 0 2px;
+/* 7. Floating Next Step Action & Mobile Home Indicator */
+.app-floating-action {
+  position: absolute;
+  bottom: 20px;
+  right: 14px;
+  z-index: 20;
 }
 
 .btn-app-next {
@@ -770,8 +777,25 @@ a {
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
-  transition: transform 0.2s;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-app-next:hover {
+  background: #1e293b;
+  transform: translateX(2px);
+}
+
+.mobile-home-indicator {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 76px;
+  height: 3px;
+  background: #cbd5e1;
+  border-radius: 2px;
+  z-index: 10;
 }
 
 .btn-app-next:hover {
