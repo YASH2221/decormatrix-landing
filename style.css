@@ -1287,6 +1287,19 @@ a {
   gap: 22px;
 }
 
+.steps-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .steps-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
 .step-card {
   background: #ffffff;
   border: 1px solid var(--border-color);
@@ -2011,9 +2024,10 @@ a {
     grid-template-columns: 1fr;
   }
   .steps-grid,
-  .steps-grid-4 {
+  .steps-grid-4,
+  .steps-grid-5 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
   }
   .pricing-grid {
     grid-template-columns: 1fr;
@@ -2209,6 +2223,7 @@ a {
   .features-grid,
   .steps-grid,
   .steps-grid-4,
+  .steps-grid-5,
   .pricing-grid {
     grid-template-columns: 1fr;
     gap: 16px;
