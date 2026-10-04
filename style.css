@@ -1769,74 +1769,135 @@ a {
 }
 
 .sample-sheet-logo {
-  width: 38px;
-  height: 38px;
-  border-radius: 6px;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
 }
 
 .sample-sheet-name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
-  color: var(--text-title);
+  color: #0f172a;
+  letter-spacing: -0.3px;
 }
 
 .sample-sheet-sub {
   font-size: 11px;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: #64748b;
+}
+
+.sample-sheet-meta,
+.sample-sheet-loc {
+  font-size: 10px;
+  color: #94a3b8;
+  margin-top: 1px;
 }
 
 .sample-sheet-badge {
   background: #fff1f2;
   color: #be123c;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 800;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #fecdd3;
+  white-space: nowrap;
+}
+
+/* Two Column Client & Specs Info */
+.pdf-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 10px 0 14px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 16px;
+}
+
+.pdf-info-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.pdf-info-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.pdf-info-line {
+  font-size: 11px;
+  color: #64748b;
+  line-height: 1.45;
 }
 
 .sample-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 11.5px;
   margin-bottom: 16px;
 }
 
 .sample-table th {
   background: #0f172a;
   color: #ffffff;
-  padding: 8px;
+  padding: 9px 10px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
   text-align: left;
 }
 
 .sample-table td {
-  padding: 8px;
+  padding: 10px;
   border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.sample-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
 }
 
 .sample-sub-pill {
-  font-size: 9.5px;
+  font-size: 9px;
+  font-weight: 600;
   color: #be123c;
   background: #fff1f2;
   display: inline-block;
   padding: 1px 6px;
   border-radius: 4px;
-  margin-top: 3px;
+  border: 1px solid #ffe4e6;
+}
+
+.col-total {
+  font-weight: 800;
+  color: #be123c;
 }
 
 .sample-sheet-summary {
-  width: 240px;
+  width: 250px;
   margin-left: auto;
   background: #f8fafc;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 12px 14px;
   font-size: 12px;
+  margin-bottom: 16px;
 }
 
 .sum-row {
   display: flex;
   justify-content: space-between;
   padding: 3px 0;
+  color: #475569;
 }
 
 .sum-row.discount {
@@ -1847,9 +1908,45 @@ a {
 .sum-row.grand {
   border-top: 2px solid var(--primary);
   padding-top: 6px;
+  margin-top: 4px;
   font-weight: 800;
-  font-size: 13.5px;
+  font-size: 14px;
   color: #be123c;
+}
+
+.pdf-terms-wrap {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color);
+  font-size: 10.5px;
+  color: #64748b;
+}
+
+.pdf-terms-title {
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.pdf-terms-list {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.pdf-thank-you {
+  font-style: italic;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 10.5px;
+}
+
+.pdf-url-footer {
+  text-align: center;
+  font-size: 9.5px;
+  color: #94a3b8;
+  margin-top: 8px;
 }
 
 .pdf-modal-footer {
