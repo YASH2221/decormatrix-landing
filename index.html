@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>DecorMatrix - 2 मिनट में बनाएं मॉड्यूलर किचन कोटेशन | Modular Kitchen Quotation Software</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="मॉड्यूलर किचन वेंडर्स, इंटीरियर डिज़ाइनर्स और कारपेंटर्स के लिए भारत का नंबर-1 कोटेशन ऐप। L-शेप, U-शेप, स्ट्रेट किचन का ऑटो रनिंग फीट नापें और अपने ब्रांड लोगो के साथ 1-क्लिक में WhatsApp PDF भेजें।" />
+  <meta name="keywords" content="modular kitchen quotation, kitchen quotation software, kitchen cost calculator, decormatrix, interior quotation maker, kitchen estimation app, running feet calculator" />
+  <meta name="author" content="DecorMatrix" />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- OpenGraph / Social Sharing (WhatsApp, Facebook, Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DecorMatrix - स्मार्ट मॉड्यूलर किचन कोटेशन सॉफ़्टवेयर" />
+  <meta property="og:description" content="कागज-कलम और एक्सेल को कहें अलविदा! अपने ब्रांड लोगो के साथ 2 मिनट में बनाएं प्रीमियम PDF कोटेशन।" />
+  <meta property="og:image" content="/assets/logo.png" />
+  <meta property="og:url" content="https://decormatrix.vercel.app" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- 1. Top Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <img src="/assets/logo.png" alt="DecorMatrix Logo" class="brand-img" />
+        <span class="brand-text">Decor<span class="brand-accent">Matrix</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#features" class="nav-link">फीचर्स (Features)</a>
+        <a href="#how-it-works" class="nav-link">कैसे काम करता है</a>
+        <a href="#live-demo" class="nav-link">लाइव डेमो (Demo)</a>
+        <a href="#pricing" class="nav-link">प्लान्स (Pricing)</a>
+        <a href="#faq" class="nav-link">सवाल-जवाब (FAQ)</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <a href="https://wa.me/916260859544?text=Hello%20DecorMatrix%20Team%2C%20I%20am%20interested%20in%20the%20quotation%20app" target="_blank" class="btn-whatsapp-nav">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.553 4.095 1.517 5.823l-1.611 5.889 6.037-1.583c1.667.913 3.578 1.438 5.61 1.438 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+          <span>सपोर्ट चैट</span>
+        </a>
+        <a href="https://decormatrix.vercel.app" target="_blank" class="btn btn-primary nav-cta">
+          <span>ऐप खोलें (Open App)</span>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      
+      <!-- Left: Text Content -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          <span>⚡ भारत का #1 मॉड्यूलर किचन कोटेशन सॉफ़्टवेयर</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="text-gradient">2 मिनट में बनाएं</span><br />
+          प्रोफेशनल मॉड्यूलर किचन कोटेशन
+        </h1>
+
+        <p class="hero-subtitle">
+          कागज-कलम, डायरी और एक्सेल की माथापच्ची बंद कीजिए। <strong>L-शेप, U-शेप या स्ट्रेट किचन</strong> की लंबाई डालिए, अपने ब्रांड लोगो के साथ 1-क्लिक में <strong>प्रीमियम PDF कोटेशन</strong> सीधे ग्राहक के WhatsApp पर भेजिए।
+        </p>
+
+        <!-- CTA Buttons Row -->
+        <div class="hero-cta-group">
+          <a href="https://decormatrix.vercel.app" target="_blank" class="btn btn-primary btn-large glow-btn">
+            <span>10 फ्री कोट्स आज़माएं</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button class="btn btn-secondary btn-large" id="btnPreviewSamplePdf">
+            <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>सैंपल PDF देखें</span>
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-number">10 Free</span>
+            <span class="stat-label">ट्रायल कोट्स</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">1-Min</span>
+            <span class="stat-label">PDF एक्सपोर्ट</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">क्लाउड बैकअप</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Interactive 3D Phone App Mockup -->
+      <div class="hero-visual">
+        <div class="phone-mockup-wrapper">
+          <div class="phone-frame">
+            <!-- Speaker & Camera notch -->
+            <div class="phone-notch"><span class="notch-cam"></span></div>
+            
+            <!-- Phone Screen Content (Mini UI Demo) -->
+            <div class="phone-screen">
+              <div class="phone-app-header">
+                <div class="phone-app-brand">
+                  <img src="/assets/logo.png" class="phone-logo" alt="DM" />
+                  <span>Decor<span style="color:#e11d48">Matrix</span></span>
+                </div>
+                <span class="phone-step-tag">Step 4/5</span>
+              </div>
+
+              <!-- Animated Shape Card -->
+              <div class="phone-card">
+                <div class="phone-card-title">किचन लेआउट • L-Shape</div>
+                <div class="phone-measurements">
+                  <span>Side A: 10 ft</span> • <span>Side B: 8 ft</span> • <span class="rft-badge">16 Rft Net</span>
+                </div>
+              </div>
+
+              <!-- Material & Package Card -->
+              <div class="phone-card phone-package-card">
+                <div class="package-pill">PLYWOOD • LUXURY TIER</div>
+                <div class="phone-item-row">
+                  <span>बेस कैबिनेट्स (BWP मरीन)</span>
+                  <span class="phone-price">₹33,894</span>
+                </div>
+                <div class="phone-item-row">
+                  <span>वॉल कैबिनेट्स (एक्रिलिक)</span>
+                  <span class="phone-price">₹28,245</span>
+                </div>
+                <div class="phone-item-row">
+                  <span>टैंडम ड्रॉअर यूनिट्स (सॉफ्ट क्लोज़)</span>
+                  <span class="phone-price">₹11,600</span>
+                </div>
+              </div>
+
+              <!-- Live Total Card -->
+              <div class="phone-total-card">
+                <div>
+                  <div class="total-label">Grand Total (GST सहित)</div>
+                  <div class="total-val">₹1,37,805</div>
+                </div>
+                <div class="phone-pdf-btn">
+                  <span>PDF WhatsApp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Floating Badge -->
+          <div class="floating-badge badge-top-right">
+            <span class="floating-icon">🛡️</span>
+            <div>
+              <div class="floating-title">BWP & PVC Ready</div>
+              <div class="floating-desc">100% सटीक रेट्स</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <span class="floating-icon">📲</span>
+            <div>
+              <div class="floating-title">1-Tap WhatsApp</div>
+              <div class="floating-desc">ब्रांडेड PDF डिलीवरी</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. Target Audience / Trust Banner -->
+  <section class="audience-section">
+    <div class="container text-center">
+      <p class="audience-heading">विशेष रूप से इनके लिए तैयार किया गया है:</p>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span class="audience-icon">🏭</span>
+          <h3>किचन वेंडर्स</h3>
+          <p>दुकान या शोरूम पर आने वाले ग्राहकों को तुरंत कोटेशन दें।</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">📐</span>
+          <h3>इंटीरियर डिज़ाइनर्स</h3>
+          <p>बिना एक्सेल फॉर्मूले के अपने क्लाइंट्स को प्रीमियम बिलिंग दिखाएं।</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">🪚</span>
+          <h3>कारपेंटर्स व कांट्रैक्टर्स</h3>
+          <p>साइट पर खड़े-खड़े रनिंग फीट नापें और सही दाम तय करें।</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">🏢</span>
+          <h3>हार्डवेयर व प्लाईवुड डीलर</h3>
+          <p>ग्राहकों को रेडीमेड किचन पैकेज बनाकर सेल बढ़ाएं।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Problem vs Solution Section -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title">कागज-कलम छोड़िए, स्मार्ट बनिए</h2>
+        <p class="section-subtitle">जानिए कैसे DecorMatrix आपके घंटों का काम मिनटों में कर देता है</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Old Traditional Way -->
+        <div class="comparison-card old-way">
+          <div class="card-badge badge-danger">❌ पुराना दर्दनाक तरीका</div>
+          <h3 class="comp-title">डायरी, पर्ची और एक्सेल शीट</h3>
+          <ul class="comp-list">
+            <li>
+              <span class="list-cross">✕</span>
+              <span>हर कैबिनेट का अलग-अलग हिसाब लगाने में 2 से 3 घंटे बर्बाद।</span>
+            </li>
+            <li>
+              <span class="list-cross">✕</span>
+              <span>हिसाब में गलती होने पर जेब से नुकसान उठाना पड़ता है।</span>
+            </li>
+            <li>
+              <span class="list-cross">✕</span>
+              <span>साधारण कागज की पर्ची देखकर ग्राहक मोलभाव ज़्यादा करता है।</span>
+            </li>
+            <li>
+              <span class="list-cross">✕</span>
+              <span>पुराने कोटेशन खो जाते हैं, 2 महीने बाद याद नहीं रहता क्या रेट दिया था।</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The DecorMatrix Way -->
+        <div class="comparison-card new-way">
+          <div class="card-badge badge-success">✅ DecorMatrix का स्मार्ट तरीका</div>
+          <h3 class="comp-title">1 मिनट में कॉर्पोरेट लेवल PDF</h3>
+          <ul class="comp-list">
+            <li>
+              <span class="list-check">✓</span>
+              <span>सिर्फ किचन की लंबाई डालें, रनिंग फीट और रेट्स अपने आप निकल आएंगे।</span>
+            </li>
+            <li>
+              <span class="list-check">✓</span>
+              <span>Plywood और PVC के लिए 3 पैकेज टियर (Essential, Premium, Luxury)।</span>
+            </li>
+            <li>
+              <span class="list-check">✓</span>
+              <span>आपके <strong>खुद के ब्रांड नाम और लोगो</strong> वाली साफ़-सुथरी प्रोफेशनल PDF।</span>
+            </li>
+            <li>
+              <span class="list-check">✓</span>
+              <span>क्लाउड डेटाबेस बैकअप: कोई भी कोटेशन कभी डिलीट नहीं होगा।</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Interactive Live Mini-Calculator Demo -->
+  <section class="demo-section" id="live-demo">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <div class="badge-pill inline-pill">
+          <span>🛠️ लाइव ट्राई करें (Try It Live)</span>
+        </div>
+        <h2 class="section-title">खुद आज़माकर देखिए</h2>
+        <p class="section-subtitle">किचन का साइज़ और मटेरियल बदलकर देखिए कि कोटेशन कैसे निकलता है</p>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-grid">
+          
+          <!-- Controls -->
+          <div class="demo-controls">
+            <!-- 1. Shape Selector -->
+            <div class="control-group">
+              <label class="control-label">1. किचन का लेआउट (Shape):</label>
+              <div class="shape-buttons" id="shapeBtns">
+                <button type="button" class="btn-shape active" data-shape="L_SHAPE" data-deduct="2">L-Shape (एल-शेप)</button>
+                <button type="button" class="btn-shape" data-shape="STRAIGHT" data-deduct="0">Straight (सीधा)</button>
+                <button type="button" class="btn-shape" data-shape="U_SHAPE" data-deduct="4">U-Shape (यू-शेप)</button>
+              </div>
+            </div>
+
+            <!-- 2. Sliders for Length -->
+            <div class="control-group">
+              <div class="slider-header">
+                <label class="control-label">2. Side A की लंबाई:</label>
+                <span class="slider-value" id="valSideA">10 ft</span>
+              </div>
+              <input type="range" min="4" max="25" value="10" class="custom-range" id="rangeSideA" />
+            </div>
+
+            <div class="control-group" id="groupSideB">
+              <div class="slider-header">
+                <label class="control-label">3. Side B की लंबाई:</label>
+                <span class="slider-value" id="valSideB">8 ft</span>
+              </div>
+              <input type="range" min="4" max="25" value="8" class="custom-range" id="rangeSideB" />
+            </div>
+
+            <!-- 3. Material Toggle -->
+            <div class="control-group">
+              <label class="control-label">4. कोर मटेरियल (Material):</label>
+              <div class="material-toggle-group">
+                <button type="button" class="btn-mat active" data-mat="PLYWOOD" data-rate="2150">
+                  <span>🪵 मरीन प्लाईवुड (BWP 710)</span>
+                </button>
+                <button type="button" class="btn-mat" data-mat="PVC" data-rate="1850">
+                  <span>💧 100% वाटरप्रूफ PVC / WPC</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Output Preview -->
+          <div class="demo-output">
+            <div class="output-card-inner">
+              <div class="output-top-tag">अनुमानित लाइव कोटेशन</div>
+              
+              <div class="calc-metrics">
+                <div class="metric-box">
+                  <div class="m-label">कुल रनिंग फीट (Net Rft)</div>
+                  <div class="m-val" id="displayRft">16.0 Rft</div>
+                  <div class="m-sub" id="displayFormula">(10 + 8) - 2ft कॉर्नर कटौती</div>
+                </div>
+
+                <div class="metric-box">
+                  <div class="m-label">रेट प्रति रनिंग फीट</div>
+                  <div class="m-val" id="displayUnitRate">₹2,150 / Rft</div>
+                  <div class="m-sub" id="displayMatName">Plywood Luxury Package</div>
+                </div>
+              </div>
+
+              <!-- Estimated Total Box -->
+              <div class="estimate-total-box">
+                <div class="est-label">अनुमानित कुल लागत (Estimated Quote)</div>
+                <div class="est-amount" id="displayTotal">₹1,47,560</div>
+                <div class="est-note">✓ बेस व वॉल कैबिनेट्स, सॉफ्ट-क्लोज़ ड्रॉअर्स, GST व फिटिंग शामिल</div>
+              </div>
+
+              <div class="demo-action-wrap">
+                <a href="https://decormatrix.vercel.app" target="_blank" class="btn btn-primary btn-block">
+                  <span>पूरी लिस्ट व PDF बनाने के लिए ऐप खोलें</span>
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Features Grid Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title">पावरफुल फीचर्स जो आपको आगे रखते हैं</h2>
+        <p class="section-subtitle">मॉड्यूलर किचन बिज़नेस को ऑटोमेशन पर लाने के लिए हर जरूरी टूल</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">📐</div>
+          <h3>ऑटोमैटिक रनिंग फीट (Rft)</h3>
+          <p>L-शेप और U-शेप में कॉर्नर ओवरलैप की 2 फीट या 4 फीट की कटौती अपने आप होती है। कोई मैन्युअल गलती नहीं।</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🪵</div>
+          <h3>Plywood & PVC दोनों सपोर्टेड</h3>
+          <p>मरीन प्लाईवुड (BWP 710) और 100% वाटरप्रूफ PVC/WPC बोर्ड दोनों के लिए अलग-अलग रेट्स व कैबिनेट्स कस्टमाइज़ करें।</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">📦</div>
+          <h3>3 रेडीमेड पैकेज टियर्स</h3>
+          <p>Essential, Premium और Luxury टियर सिस्टम। ग्राहक के बजट अनुसार 1-टैप में पूरा पैकेज बदलें।</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🏷️</div>
+          <h3>आपकी अपनी ब्रांडिंग व लोगो</h3>
+          <p>PDF पर आपका शॉप का नाम, लोगो, फोन नंबर और पता छपेगा। ग्राहक को सीधे आपकी फर्म का ऑफिशियल कोटेशन दिखेगा।</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">📄</div>
+          <h3>1-क्लिक WhatsApp PDF शेयर</h3>
+          <p>कोटेशन बनते ही 1 बटन दबाइए—सीधे ग्राहक के WhatsApp पर सुंदर और प्रोफेशनल कोटेशन PDF पहुँच जाती है।</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">☁️</div>
+          <h3>क्लाउड कोटेशन हिस्ट्री (Saved)</h3>
+          <p>सभी ग्राहकों के पुराने कोट्स क्लाउड पर सुरक्षित रहते हैं। किसी भी समय दोबारा खोलें, एडिट करें या फिर से शेयर करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. How It Works (3 Simple Steps) -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title">केवल 3 आसान स्टेप्स में कोटेशन तैयार</h2>
+        <p class="section-subtitle">इतना सरल कि कोई भी कारपेंटर या सेल्समैन 2 मिनट में सीख जाए</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">स्टेप 01</div>
+          <h3>नाप व पैकेज चुनें</h3>
+          <p>किचन का लेआउट (L-शेप, Straight या U-शेप) चुनें, दीवार की लंबाई डालें और Plywood या PVC पैकेज सिलेक्ट करें।</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badge">स्टेप 02</div>
+          <h3>आइटम्स व सब-आइटम सेट करें</h3>
+          <p>बेस कैबिनेट, वॉल कैबिनेट, टैंडम ड्रॉअर, पैंट्री यूनिट्स में जो चाहिए रखें, बाकी हटाएँ। सब-आइटम्स जोड़ें।</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badge">स्टेप 03</div>
+          <h3>WhatsApp PDF भेजें</h3>
+          <p>ग्राहक का नाम व डिस्काउंट डालें और 1-क्लिक में अपने लोगो वाली PDF जनरेट करके तुरंत WhatsApp करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Pricing Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <div class="badge-pill inline-pill"><span>💎 पारदर्शी प्लान्स (Pricing)</span></div>
+        <h2 class="section-title">अपने बिज़नेस के लिए सही प्लान चुनें</h2>
+        <p class="section-subtitle">बिना किसी छिपे चार्ज के, सीधा और ईमानदार सिस्टम</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Free Trial Card -->
+        <div class="pricing-card free-card">
+          <div class="plan-type">शुरुआती यूज़र्स के लिए</div>
+          <h3 class="plan-name">Free Trial (फ्री ट्रायल)</h3>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-val">0</span>
+            <span class="price-period">/ 10 कोट्स</span>
+          </div>
+          <p class="plan-desc">ऐप की पूरी ताकत और फीचर्स को बिना कोई पैसा दिए आज़माएं।</p>
+
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> 10 फुल-फीचर्ड किचन कोटेशन्स</li>
+            <li><span class="check-icon">✓</span> L-शेप, Straight, U-शेप Rft मैथ</li>
+            <li><span class="check-icon">✓</span> Plywood और PVC दोनों विकल्प</li>
+            <li><span class="check-icon">✓</span> कस्टम ब्रांड लोगो व नाम</li>
+            <li><span class="check-icon">✓</span> WhatsApp PDF एक्सपोर्ट</li>
+          </ul>
+
+          <a href="https://decormatrix.vercel.app" target="_blank" class="btn btn-secondary btn-block">
+            फ्री ट्रायल शुरू करें
+          </a>
+        </div>
+
+        <!-- Pro Unlimited Plan Card -->
+        <div class="pricing-card pro-card popular-card">
+          <div class="popular-ribbon">सबसे लोकप्रिय (POPULAR)</div>
+          <div class="plan-type">फुल बिज़नेस ऑटोमेशन</div>
+          <h3 class="plan-name">Pro Unlimited Plan</h3>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-val">Special</span>
+            <span class="price-period">/ सपोर्ट टीम से संपर्क करें</span>
+          </div>
+          <p class="plan-desc">अनलिमिटेड कोट्स, क्लाउड डेटाबेस बैकअप और प्राथमिकता सपोर्ट।</p>
+
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> <strong>असीमित (Unlimited)</strong> कोटेशन जनरेशन</li>
+            <li><span class="check-icon">✓</span> <strong>क्लाउड डेटाबेस स्टोरेज</strong> (Saved History)</li>
+            <li><span class="check-icon">✓</span> आपके खुद के ब्रांड की हाई-रेजॉल्यूशन PDF</li>
+            <li><span class="check-icon">✓</span> मास्टर रेट्स व आइटम कस्टमाइज़र</li>
+            <li><span class="check-icon">✓</span> 24/7 प्राथमिकता WhatsApp व कॉल सहायता</li>
+          </ul>
+
+          <a href="https://wa.me/916260859544?text=Hello%20DecorMatrix%20Team%2C%20I%20want%20to%20upgrade%20to%20the%20Pro%20Unlimited%20Plan." target="_blank" class="btn btn-primary btn-block glow-btn">
+            सपोर्ट टीम से अपग्रेड कराएं
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <h2 class="section-title">अक्सर पूछे जाने वाले सवाल (FAQ)</h2>
+        <p class="section-subtitle">DecorMatrix के बारे में आपके मन में आने वाले प्रश्नों के उत्तर</p>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>क्या यह मोबाइल और कंप्यूटर दोनों पर चलता है?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>हाँ, बिल्कुल! DecorMatrix को आप अपने मोबाइल के Chrome ब्राउज़र पर, Android ऐप में, टैबलेट और लैपटॉप/कंप्यूटर किसी पर भी आसानी से चला सकते हैं। आपका डेटा सभी डिवाइसेज पर सिंक रहेगा।</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>क्या PDF पर मेरी दुकान या कंपनी का नाम दिखेगा?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>हाँ, 100%! आप अपनी प्रोफाइल में जाकर अपनी फर्म का नाम, पता, फोन नंबर और लोगो अपलोड कर सकते हैं। ग्राहक को जो PDF जाएगी, उस पर सिर्फ आपकी कंपनी की ब्रांडिंग होगी।</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>क्या मैं अपने खुद के रेट्स और कीमतें बदल सकता हूँ?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>हाँ! ऐप में 'मास्टर रेट्स (Admin)' का अलग सेक्शन है। वहाँ आप अपनी मार्केट या लागत के अनुसार हर कैबिनेट और फिटिंग का रनिंग फीट रेट हमेशा के लिए बदल कर सेव कर सकते हैं।</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>10 फ्री कोट्स पूरे होने के बाद क्या होगा?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>10 फ्री कोट्स पूरे होने पर आप हमारी सहायता टीम (+91 6260859544) से WhatsApp या कॉल पर संपर्क करके अपने अकाउंट को अनलिमिटेड लाइफटाइम एक्सेस में अपग्रेड करवा सकते हैं।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Final Call to Action -->
+  <section class="cta-banner-section">
+    <div class="container text-center">
+      <div class="cta-banner-inner">
+        <h2 class="cta-title">आज ही अपना पहला डिजिटल कोटेशन बनाकर देखें</h2>
+        <p class="cta-desc">10 कोट्स पूरी तरह मुफ़्त हैं। कोई क्रेडिट कार्ड या अग्रिम फीस की आवश्यकता नहीं।</p>
+        <div class="cta-btn-wrap">
+          <a href="https://decormatrix.vercel.app" target="_blank" class="btn btn-primary btn-large glow-btn">
+            <span>मुफ़्त में शुरू करें (Start Free Trial)</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/916260859544?text=Hello%20DecorMatrix%20Support%2C%20I%20have%20a%20question%20about%20the%20app" target="_blank" class="btn btn-secondary btn-large">
+            <span>WhatsApp पर सवाल पूछें</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <div class="brand-logo footer-logo">
+          <img src="/assets/logo.png" alt="DecorMatrix" class="brand-img" />
+          <span class="brand-text">Decor<span class="brand-accent">Matrix</span></span>
+        </div>
+        <p class="footer-about">
+          मॉड्यूलर किचन मैन्युफैक्चरर्स, इंटीरियर डिजाइनर्स और वेंडर्स के लिए बनाया गया सबसे भरोसेमंद कोटेशन व एस्टीमेशन सॉफ्टवेयर।
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>महत्वपूर्ण लिंक्स</h4>
+        <ul>
+          <li><a href="#features">फ़ीचर्स</a></li>
+          <li><a href="#live-demo">लाइव कैलकुलेटर</a></li>
+          <li><a href="#pricing">प्राइसिंग</a></li>
+          <li><a href="https://decormatrix.vercel.app" target="_blank">वेब ऐप लॉगिन</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>कस्टमर सपोर्ट टीम</h4>
+        <p>📞 <strong>कॉल / WhatsApp:</strong> <a href="tel:+916260859544">+91 6260859544</a></p>
+        <p>✉️ <strong>ईमेल:</strong> <a href="mailto:decormatrixsupport@gmail.com">decormatrixsupport@gmail.com</a></p>
+        <p>📍 <strong>सपोर्ट समय:</strong> सोम - शनि (10:00 AM - 7:00 PM)</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>© 2026 DecorMatrix Technologies. सर्वाधिकार सुरक्षित। (All rights reserved).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/916260859544?text=Hello%20DecorMatrix%20Team%2C%20I%20want%20to%20know%20more%20about%20the%20app" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <svg class="whatsapp-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.553 4.095 1.517 5.823l-1.611 5.889 6.037-1.583c1.667.913 3.578 1.438 5.61 1.438 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+  </a>
+
+  <!-- Sample PDF Modal -->
+  <div class="pdf-modal-backdrop" id="pdfModal">
+    <div class="pdf-modal-card">
+      <div class="pdf-modal-header">
+        <div class="pdf-modal-title">
+          <span>📄 सैंपल कोटेशन PDF प्रीव्यू</span>
+        </div>
+        <button class="pdf-close-btn" id="btnClosePdfModal">✕</button>
+      </div>
+      <div class="pdf-modal-body">
+        <div class="sample-pdf-container">
+          <div class="sample-sheet">
+            <div class="sample-sheet-header">
+              <div class="sample-sheet-brand">
+                <img src="/assets/logo.png" class="sample-sheet-logo" alt="Logo" />
+                <div>
+                  <div class="sample-sheet-name">Kiyan Hardware & Plywood</div>
+                  <div class="sample-sheet-sub">मॉड्यूलर किचन कोटेशन सिस्टम • 📞 +91 6260859544</div>
+                </div>
+              </div>
+              <div class="sample-sheet-badge">Quote #DM-2610-8492</div>
+            </div>
+
+            <div class="sample-sheet-table-wrap">
+              <table class="sample-table">
+                <thead>
+                  <tr>
+                    <th>विवरण (सामग्री)</th>
+                    <th>मात्रा</th>
+                    <th>दर (प्रति यूनिट)</th>
+                    <th>कुल रकम</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>बेस कैबिनेट्स (निचले डिब्बे)</strong>
+                      <div class="sample-sub-pill">सॉफ्ट क्लोज़ हिंज • वाटरप्रूफ प्लाईवुड</div>
+                    </td>
+                    <td>16.0 Rft</td>
+                    <td>₹2,118</td>
+                    <td>₹33,894</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>काउंटरटॉप स्लैब (ग्रेनाइट/क्वार्ट्ज)</strong>
+                    </td>
+                    <td>16.0 Rft</td>
+                    <td>₹1,647</td>
+                    <td>₹26,362</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>वॉल कैबिनेट्स (ऊपरी डिब्बे)</strong>
+                      <div class="sample-sub-pill">एक्रिलिक फिनिश • ग्लास शटर</div>
+                    </td>
+                    <td>15.0 Rft</td>
+                    <td>₹1,883</td>
+                    <td>₹28,245</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>टैंडम ड्रॉअर यूनिट्स (3 ड्रॉअर सेट)</strong>
+                      <div class="sample-sub-pill">कटलरी ट्रे • थाली बास्केट</div>
+                    </td>
+                    <td>2 सेट</td>
+                    <td>₹5,800</td>
+                    <td>₹11,600</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="sample-sheet-summary">
+              <div class="sum-row"><span>कुल योग (Subtotal):</span><span>₹1,00,101</span></div>
+              <div class="sum-row discount"><span>छूट (5% Discount):</span><span>-₹5,005</span></div>
+              <div class="sum-row"><span>जीएसटी (18% GST):</span><span>₹17,117</span></div>
+              <div class="sum-row grand"><span>अंतिम कुल (Grand Total):</span><span>₹1,12,213</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pdf-modal-footer">
+        <a href="https://decormatrix.vercel.app" target="_blank" class="btn btn-primary">
+          <span>अपने बिज़नेस के लिए ऐसा कोटेशन बनाएं</span>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
