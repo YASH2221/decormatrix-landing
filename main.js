@@ -67,15 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (currentShape === 'STRAIGHT') {
       netRft = sideA;
-      formulaText = `${sideA}ft Straight (सीधा लेआउट)`;
+      formulaText = `${sideA} ft Straight Layout (No deductions)`;
       if (groupSideB) groupSideB.style.display = 'none';
     } else if (currentShape === 'L_SHAPE') {
       netRft = (sideA + sideB) - 2;
-      formulaText = `(${sideA} + ${sideB}) - 2ft कॉर्नर कटौती`;
+      formulaText = `(${sideA} + ${sideB}) - 2 ft Corner deduction`;
       if (groupSideB) groupSideB.style.display = 'block';
     } else if (currentShape === 'U_SHAPE') {
       netRft = (sideA + (sideB * 2)) - 4;
-      formulaText = `(${sideA} + ${sideB} + ${sideB}) - 4ft दो कॉर्नर कटौती`;
+      formulaText = `(${sideA} + ${sideB} + ${sideB}) - 4 ft Corner deductions`;
       if (groupSideB) groupSideB.style.display = 'block';
     }
 
