@@ -1884,6 +1884,13 @@ a {
   line-height: 1.45;
 }
 
+.sample-sheet-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
+
 .sample-table {
   width: 100%;
   border-collapse: collapse;
@@ -2272,20 +2279,131 @@ a {
   }
 
   /* PDF Modal responsive */
-  .pdf-modal-card {
-    max-height: 95vh;
+  .pdf-modal-backdrop {
+    padding: 12px 8px;
   }
+
+  .pdf-modal-card {
+    width: 100%;
+    max-height: 94vh;
+    border-radius: 16px;
+  }
+
+  .pdf-modal-header {
+    padding: 12px 14px;
+  }
+
+  .pdf-modal-title {
+    font-size: 14px;
+  }
+
+  .pdf-modal-body {
+    padding: 12px 8px;
+  }
+
+  .sample-sheet {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .sample-sheet-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .sample-sheet-brand {
+    gap: 8px;
+  }
+
+  .sample-sheet-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .sample-sheet-name {
+    font-size: 16px;
+  }
+
+  .sample-sheet-meta,
+  .sample-sheet-loc {
+    font-size: 9px;
+  }
+
+  .sample-sheet-badge {
+    align-self: flex-start;
+    font-size: 10.5px;
+    padding: 3px 8px;
+  }
+
   .pdf-info-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
+    padding: 8px 0 10px;
   }
-  .sample-sheet {
-    padding: 16px;
+
+  .pdf-info-title {
+    font-size: 12.5px;
   }
+
+  .pdf-info-line {
+    font-size: 10px;
+  }
+
+  .sample-sheet-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 12px;
+  }
+
   .sample-table {
-    font-size: 10.5px;
+    min-width: 380px;
+    font-size: 10px;
+    margin-bottom: 0;
   }
+
+  .sample-table th {
+    padding: 7px 6px;
+    font-size: 9px;
+  }
+
+  .sample-table td {
+    padding: 8px 6px;
+    font-size: 9.5px;
+  }
+
+  .sample-sub-pill {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+
   .sample-sheet-summary {
     width: 100%;
+    margin-left: 0;
+    padding: 10px 12px;
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  .sum-row.grand {
+    font-size: 13px;
+  }
+
+  .pdf-terms-wrap {
+    font-size: 9.5px;
+  }
+
+  .pdf-modal-footer {
+    padding: 10px 14px;
+    text-align: center;
+  }
+
+  .pdf-modal-footer .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 13px;
+    padding: 10px 14px;
   }
 }
