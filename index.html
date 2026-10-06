@@ -139,7 +139,6 @@
       <nav class="nav-menu" id="navMenu">
         <a href="#features" class="nav-link">Features</a>
         <a href="#how-it-works" class="nav-link">How It Works</a>
-        <a href="#live-demo" class="nav-link">Live Demo</a>
         <a href="#pricing" class="nav-link">Pricing</a>
         <a href="#faq" class="nav-link">FAQ</a>
       </nav>
@@ -478,103 +477,6 @@
     </div>
   </section>
 
-  <!-- 5. Interactive Live Mini-Calculator Demo -->
-  <section class="demo-section" id="live-demo">
-    <div class="container">
-      <div class="section-title-wrap text-center">
-        <div class="badge-pill inline-pill">
-          <span>🛠️ Interactive Calculator</span>
-        </div>
-        <h2 class="section-title">Try the Live Estimation Demo</h2>
-        <p class="section-subtitle">Adjust layout dimensions and materials below to see real-time calculation in action</p>
-      </div>
-
-      <div class="demo-card">
-        <div class="demo-grid">
-          
-          <!-- Controls -->
-          <div class="demo-controls">
-            <!-- 1. Shape Selector -->
-            <div class="control-group">
-              <label class="control-label">1. Kitchen Layout (Shape):</label>
-              <div class="shape-buttons" id="shapeBtns">
-                <button type="button" class="btn-shape active" data-shape="L_SHAPE" data-deduct="2">L-Shape (2ft deduction)</button>
-                <button type="button" class="btn-shape" data-shape="STRAIGHT" data-deduct="0">Straight (0ft deduction)</button>
-                <button type="button" class="btn-shape" data-shape="U_SHAPE" data-deduct="4">U-Shape (4ft deduction)</button>
-              </div>
-            </div>
-
-            <!-- 2. Sliders for Length -->
-            <div class="control-group">
-              <div class="slider-header">
-                <label class="control-label">2. Side A Length:</label>
-                <span class="slider-value" id="valSideA">10 ft</span>
-              </div>
-              <input type="range" min="4" max="25" value="10" class="custom-range" id="rangeSideA" />
-            </div>
-
-            <div class="control-group" id="groupSideB">
-              <div class="slider-header">
-                <label class="control-label">3. Side B Length:</label>
-                <span class="slider-value" id="valSideB">8 ft</span>
-              </div>
-              <input type="range" min="4" max="25" value="8" class="custom-range" id="rangeSideB" />
-            </div>
-
-            <!-- 3. Material Toggle -->
-            <div class="control-group">
-              <label class="control-label">4. Core Material & Specifications:</label>
-              <div class="material-toggle-group">
-                <button type="button" class="btn-mat active" data-mat="PLYWOOD" data-rate="2150">
-                  <span>🪵 Marine Plywood (BWP 710)</span>
-                </button>
-                <button type="button" class="btn-mat" data-mat="PVC" data-rate="1850">
-                  <span>💧 100% Waterproof PVC / WPC</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Live Output Preview -->
-          <div class="demo-output">
-            <div class="output-card-inner">
-              <div class="output-top-tag">Live Estimated Quote</div>
-              
-              <div class="calc-metrics">
-                <div class="metric-box">
-                  <div class="m-label">Net Running Feet (Rft)</div>
-                  <div class="m-val" id="displayRft">16.0 Rft</div>
-                  <div class="m-sub" id="displayFormula">(10 + 8) - 2ft corner deduction</div>
-                </div>
-
-                <div class="metric-box">
-                  <div class="m-label">Rate per Running Foot</div>
-                  <div class="m-val" id="displayUnitRate">₹2,150 / Rft</div>
-                  <div class="m-sub" id="displayMatName">Plywood Luxury Package</div>
-                </div>
-              </div>
-
-              <!-- Estimated Total Box -->
-              <div class="estimate-total-box">
-                <div class="est-label">Estimated Total Project Cost</div>
-                <div class="est-amount" id="displayTotal">₹1,47,560</div>
-                <div class="est-note">✓ Includes base & wall cabinets, soft-close drawers, hardware & GST</div>
-              </div>
-
-              <div class="demo-action-wrap">
-                <a href="https://app.decormatrix.in" target="_blank" class="btn btn-primary btn-block">
-                  <span>Open Full App to Customize & Download PDF</span>
-                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- 6. Features Grid Section -->
   <section class="features-section" id="features">
     <div class="container">
@@ -864,7 +766,6 @@
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#features">Features</a></li>
-          <li><a href="#live-demo">Live Calculator</a></li>
           <li><a href="#pricing">Pricing Plans</a></li>
           <li><a href="https://app.decormatrix.in" target="_blank">Web App Login</a></li>
         </ul>
