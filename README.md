@@ -15,7 +15,7 @@ Live URL: [https://decormatrix.vercel.app](https://decormatrix.vercel.app)
   3. Pick Material & Package Tiers (PVC vs Marine Plywood, Essential/Premium/Luxury)
   4. Customize Cabinets & Accessories
   5. Generate Instant Branded PDF & 1-Click WhatsApp Share
-- **100% Free Lifetime Access**: No subscription fees, no credit card, unlimited quotations for all users.
+- **100% Free Access**: No subscription fees, no credit card, unlimited quotations for all users.
 - **Full SEO & Schema Markup**: JSON-LD Structured Data, Canonical tags, OpenGraph previews, `robots.txt`, and `sitemap.xml`.
 - **100% Responsive Design**: Zero horizontal overflow, custom mobile frames, and high-performance CSS.
 
