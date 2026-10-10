@@ -1383,6 +1383,11 @@ a {
   background: #ffffff;
 }
 
+.pricing-grid.single-card {
+  grid-template-columns: 1fr;
+  max-width: 680px;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
