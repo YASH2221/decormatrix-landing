@@ -2529,3 +2529,17 @@ a {
     padding: 10px 14px;
   }
 }
+
+/* Hero phone: real app screenshot */
+.phone-screen--shot {
+  padding: 22px 0 0;
+  background: #ffffff;
+}
+.phone-screen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
